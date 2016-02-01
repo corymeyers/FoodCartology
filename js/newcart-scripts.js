@@ -15,15 +15,15 @@ $(document).ready(function() {
   $("form#form").submit(function(event) {
     event.preventDefault();
 
-    var cartName = $("input#select-amount").val();
-    var ownerName = $("input#select-size").val();
-    var imageLink = $("input#select-veg").val();
-    var locationLink= $("input#pick-veg").val();
+    var cartName = $("input#cartName").val();
+    var ownerName = $("input#ownerName").val();
+    var imageLink = $("input#imageLink").val();
+    var locationLink= $("input#locationLink").val();
 
-
-    $("span#owner-name").text(selectedSize);
-    $("span#cart-img").text(selectedVegNum);
-    $("span#location-link").text(selectedVeg);
+    $("span#cart-name").text(cartName);
+    $("span#owner-name").text(ownerName);
+    $("span#cart-img").text(imageLink);
+    $("span#location-link").text(locationLink);
 
     $("#cartSummary").show();
 
