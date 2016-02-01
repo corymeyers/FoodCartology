@@ -1,34 +1,32 @@
-# _Pizza Plaza_
+# _Food Cartology_
 
-#### _A way to order pizza, 1-29-16_
+#### _A program to connect foodcart owners with their customers_
 
-#### By _**Cory Meyers**_
+#### By _**Cory Meyers & Cassandra Culkins & Will Murphy & Wren Winters**_
 
 ## Description
 
-_I created a website for a pizza company where a user can order a pizza and see the final cost.
-
-It allows the user to choose toppings and size for the pizza they'd like to order.
-It creates a pizza object constructor with properties for toppings and size.
-It creates a prototype method for the cost of a pizza depending on the selections chosen._
+_Foodcart owners will be able to post their information... including their name, menu, and location to connect with their customers._
 
 ## Setup/Installation Requirements
 
-Start at index.html, and start your order.
+_Javascript required._
 
 ## Known Bugs
 
-_No known bugs._
+_No known bugs(yet)_
 
 ## Support and contact details
 
-_Feel free to contact me should you encounter any issues with the program._
+_Contact us through github if you have any trubs._
 
 ## Technologies Used
 
-I built this site using HTML, CSS, JavaScript and JQuery.
+_This site uses HTML, CSS, JavaScript, jQuery, mocha, and chai._
 
 ### License
 
+_MIT license_
 
-Copyright (c) 2016 **_Cory Meyers_**
+## Copyright
+Copyright (c) 2016 **FoodCartology**
