@@ -16,31 +16,32 @@
             <label>Please choose your cart below:</label>
 
               <select id="chooseCart">
-                <option value="Carl">Carl's Cart of Crustaceons</option>
-                <option value="Pizza">Pizza Plaza</option>
-                <option value="Thai">Too Many Thai</option>
-                <option value="Booze">The Booze Hut</option>
-                <option value="Taste">A Taste of Antartica</option>
+                <option value="Carl's Cart of Crustaceons">Carl's Cart of Crustaceons</option>
+                <option value="Pizza Plaza">Pizza Plaza</option>
+                <option value="Too Many Thai">Too Many Thai</option>
+                <option value="The Booze Hut">The Booze Hut</option>
+                <option value="A Taste of Antartica">A Taste of Antartica</option>
               </select><br><br>
 
             <div id="updateInfoForm">
-              <div class="updateInfoForm">
-                <div class="addressGroup">
-                  <label for="newAddress">Update Address</label>
-                  <input type="text">
-                </div><br>
-                <div class="menuGroup">
-                  <label for="newMenu">Update Menu Link</label>
-                  <input type="text">
-                </div><br>
-              </div>
-            </div>
+              <div class="addressForm">
+                <label for="newAddress">Update Address</label>
+                <input id="newAddress" class="form-control" type="text" placeholder="Street Address, City, State, Zip Code">
+              </div><br>
 
+              <div class="fileUpload btn btn-primary">
+                <span>Upload New Menu</span>
+                <input type="file" class="upload" />
+              </div><br>
+               
+            </div>
             <button type="submit" class="btn">Submit</button>
           </form>
 
-          <h2>Testfield:</h2>
-          <span id="testfield"></span>
+          <h3>Your updated info is:</h3>
+          <span id="cartName"></span><br>
+          <span id="cartAddress"></span><br>
+          <span id="cartMenu"></span>
 
         </div>
       </div>
