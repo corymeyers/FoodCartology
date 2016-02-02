@@ -16,15 +16,20 @@ function NewFoodCart(cartName,firstName,lastName,menuLink,locationLink) {
 
 $(document).ready(function() {
 
+  var foodCartOwnerArray = [];
+  
   $("form#form").submit(function(event) {
     event.preventDefault();
-
-    usersNewFoodCart = new NewFoodCart;
 
     var cartName = $("input#cartName").val();
     var ownerName = $("input#ownerName").val();
     var imageLink = $("input#imageLink").val();
     var locationLink = $("input#locationLink").val();
+
+    var usersNewFoodCart = new NewFoodCart(cartName,ownerName,imageLink,locationLink);
+
+    foodCartOwnerArray.push(usersNewFoodCart);
+    console.log(foodCartOwnerArray);
 
     $("span#cart-name").text(cartName);
     $("span#owner-name").text(ownerName);
