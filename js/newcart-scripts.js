@@ -32,13 +32,30 @@ $(document).ready(function() {
     foodCartOwnerArray.push(usersNewFoodCart);
     console.log(foodCartOwnerArray);
 
-    $("span#cart-name").text(cartName);
-    $("span#owner-name").text(ownerName);
-    $("span#cart-img").text(imageLink);
-    $("span#location-link").text(locationLink);
+    // $("span#cart-name").text(cartName);
+    // $("span#owner-name").text(ownerName);
+    // $("span#cart-img").text(imageLink);
+    // $("span#location-link").text(locationLink);
 
     // $("#newEntry").show();
-    $("#foodCartColumn").append();
+    $("#foodCartColumn").prepend('<div id="cartSummary">' +
+                                '<h2><span class="glyphicon glyphicon-cutlery"></span> ' +
+                                '<span id="cart-name">' + cartName + '</span></h2> <hr>' +
+                                '<img class="img-responsive cartImage"  src=' + imageLink + '>' + "<hr>" + '<p>Owner:' + ownerName + '</p> <p>Link to location:' + locationLink + '</p>');
+
+    <!-- <div class="col-md-12"> -->
+
+        //
+        // <p>Owner: <span id="owner-name"></span></p>
+        // <p>Cart Image:<span id="cart-img"></span></p>
+        // <p>Link to location: <span id="location-link"></span></p>
+        //
+        // <ul id="cartSummary2">
+        //
+        // </ul>
+
+    // <hr>
+
 
     $("input#cartName").val("");
     $("input#ownerName").val("");
