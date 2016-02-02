@@ -5,9 +5,10 @@ function NewFoodCart(cartName,firstName,lastName,menuLink,locationLink) {
   this.locationLink = locationLink;
 }
 
-// NewFoodCart.prototype.activeLocationLink= function() {
-//   return "<a href = http://www.google.com/?q=" + this.locationLink + ">Current Location</a>";
-// }
+NewFoodCart.prototype.fullCart = function() {
+  return this.cartName + " " + this.ownerName + " " + this.menuLink + " " + this.locationLink
+}
+
 
 // <a href="http://www.w3schools.com/html/">Visit our HTML tutorial</a>
 // return this.firstName + " " + this.lastName;
@@ -17,7 +18,7 @@ function NewFoodCart(cartName,firstName,lastName,menuLink,locationLink) {
 $(document).ready(function() {
 
   var foodCartOwnerArray = [];
-  
+
   $("form#form").submit(function(event) {
     event.preventDefault();
 
@@ -36,7 +37,13 @@ $(document).ready(function() {
     $("span#cart-img").text(imageLink);
     $("span#location-link").text(locationLink);
 
-    $("#cartSummary").show();
+    // $("#newEntry").show();
+    $("#foodCartColumn").append();
+
+    $("input#cartName").val("");
+    $("input#ownerName").val("");
+    $("input#imageLink").val("");
+    $("input#locationLink").val("");
 
   });
 });
