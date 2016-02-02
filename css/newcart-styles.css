@@ -1,8 +1,4 @@
-#cartSummary {
-  display: none;
-}
-
-.jumbotron {
-  margin: 50px;
-  border: solid #5cb85c 1px;
+#chadbeans {
+  width: 750px;
+  height: 250px;
 }
