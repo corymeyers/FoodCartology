@@ -1,6 +1,7 @@
 function NewFoodCart(cartName,firstName,lastName,menuLink,locationLink) {
   this.cartName = cartName;
   this.ownerName = ownerName;
+  this.foodCartPic = foodCartPic;
   this.menuLink = menuLink;
   this.locationLink = locationLink;
 }
@@ -24,26 +25,45 @@ $(document).ready(function() {
 
     var cartName = $("input#cartName").val();
     var ownerName = $("input#ownerName").val();
-    var imageLink = $("input#imageLink").val();
+    var menuLink = $("input#menuLink").val();
+    var foodCartPic = $("input#foodCartPic").val();
     var locationLink = $("input#locationLink").val();
 
-    var usersNewFoodCart = new NewFoodCart(cartName,ownerName,imageLink,locationLink);
+    var usersNewFoodCart = new NewFoodCart(cartName,ownerName,menuLink,foodCartPic,locationLink);
 
     foodCartOwnerArray.push(usersNewFoodCart);
     console.log(foodCartOwnerArray);
 
     // $("span#cart-name").text(cartName);
     // $("span#owner-name").text(ownerName);
-    // $("span#cart-img").text(imageLink);
+    // $("span#cart-img").text(foodCartPic);
     // $("span#location-link").text(locationLink);
 
     // $("#newEntry").show();
     $("#foodCartColumn").prepend('<div id="cartSummary">' +
                                 '<h2><span class="glyphicon glyphicon-cutlery"></span> ' +
                                 '<span id="cart-name">' + cartName + '</span></h2> <hr>' + '<div class="cartImage">' +
-                                '<img class="img-responsive"  src=' + imageLink + '></div>' + "<hr>" + '<p>Owner:' + ownerName + '</p> <p>Link to location:' + locationLink + '</p>');
+                                '<img class="img-responsive"  src=' + foodCartPic + '></div>' + "<hr>" + '<p>Owner:' + ownerName + '</p>' +
+                                // 
+                                // '<img type="button" class="menuPic" href="' + menuLink + 'data-toggle="modal" data-target="#' + ownerName + '>' +
+                                // '<div class="modal fade" id="' + ownerName + '" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">' +
+                                //   '<div class="modal-dialog" role="document">' +
+                                //     '<div class="modal-content">' +
+                                //       '<div class="modal-header">' +
+                                //         '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' + '<span aria-hidden="true">&times;</span></button>' +
+                                //         '<h4 class="modal-title" id="myModalLabel">Food Cart Menu</h4>' +
+                                //       '</div>' +
+                                //       '<div class="modal-body">' +
+                                //         '<img class="modalPic" src="' + menuLink + '">' +
+                                //       '</div>' +
+                                //     '</div>' +
+                                //   '</div>' +
+                                // '</div>' +
 
-    <!-- <div class="col-md-12"> -->
+
+                                 '<p>Link to location:' + locationLink + '</p>');
+
+    // <!-- <div class="col-md-12"> -->
 
         //
         // <p>Owner: <span id="owner-name"></span></p>
@@ -59,7 +79,8 @@ $(document).ready(function() {
 
     $("input#cartName").val("");
     $("input#ownerName").val("");
-    $("input#imageLink").val("");
+    $("input#menuLink").val("");
+    $("input#foodCartPic").val("");
     $("input#locationLink").val("");
 
   });
