@@ -40,8 +40,8 @@ $(document).ready(function() {
     // $("#newEntry").show();
     $("#foodCartColumn").prepend('<div id="cartSummary">' +
                                 '<h2><span class="glyphicon glyphicon-cutlery"></span> ' +
-                                '<span id="cart-name">' + cartName + '</span></h2> <hr>' +
-                                '<img class="img-responsive cartImage"  src=' + imageLink + '>' + "<hr>" + '<p>Owner:' + ownerName + '</p> <p>Link to location:' + locationLink + '</p>');
+                                '<span id="cart-name">' + cartName + '</span></h2> <hr>' + '<div class="cartImage">' +
+                                '<img class="img-responsive"  src=' + imageLink + '></div>' + "<hr>" + '<p>Owner:' + ownerName + '</p> <p>Link to location:' + locationLink + '</p>');
 
     <!-- <div class="col-md-12"> -->
 

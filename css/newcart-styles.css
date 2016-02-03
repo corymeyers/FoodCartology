@@ -1,18 +1,28 @@
 #chadbeans {
-  width: 550px;
+  width: 750px;
 
 }
-
+/*
 .cartImage {
+  max-width: 100%;
 
-}
+}*/
 
 .page-header {
   text-align: center;
   padding-bottom: 50px;
 }
 
+.cartImage {
+  width: 750px;
+  height: 250px;
+  overflow: hidden;
+  align-items: center;
+}
 
+.cartImage img {
+  width: 100%;
+}
 
 /*#newEntry{
   display: none;
