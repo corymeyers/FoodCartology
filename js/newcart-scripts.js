@@ -19,7 +19,10 @@ $(document).ready(function() {
     var ownerName = $("input#ownerName").val();
     var imageLink = $("input#imageLink").val();
     var locationLink = $("input#locationLink").val();
-    var mapLink = ("http://maps.google.com/?q=").concat(locationLink);
+    var mapLink = ("<p><a href='http://maps.google.com/?q=").concat(locationLink + "'" + "target='_blank'"+ ">" + "Click here for our location."+ "</a>" + "</p>");
+
+    // var mapLink = .link()
+    console.log(mapLink);
     var usersNewFoodCart = new NewFoodCart(cartName,ownerName,imageLink,mapLink);
 
     foodCartOwnerArray.push(usersNewFoodCart);
