@@ -17,17 +17,30 @@ rgba for opacity change text box thing -->
   </head>
   <body>
     <div class="jumbotron">
-      <h1>
-        Welcome to Food Cartology <span class="glyphicon glyphicon-cutlery"></span> <span class="glyphicon glyphicon-globe"></span><br>
-        <small>Where Food Cart owners can connect with their customers</small>
-      </h1>
+      <div class="transparent">
+        <table id="white" id="table">
+        <tbody>
+        <tr>
+          <h1>
+            <span class="glyphicon glyphicon-cutlery"></span> Welcome to Food Cartology  <span class="glyphicon glyphicon-globe"></span><br>
+            <h3>Where Food Cart owners can connect with their customers</h3>
+          </h1>
+        </tr>
+        </tbody>
+        </table>
+      </div>
+
     </div>
     <div class="container" id="bootstrap-theme">
       <div class="row">
         <div class="col-md-8">
           <div id="foodCartColumn">
+
+
+
+
             <!-- Existing Food Cart Posts -->
-            <br>
+            <br><hr>
             <h2><span class="glyphicon glyphicon-cutlery"></span> Ren's Bubble Tea</h2>
             <hr>
             <div class="cartImage">
@@ -50,11 +63,11 @@ rgba for opacity change text box thing -->
                 </div>
               </div>
               <p>Owner: Perry</p>
-              <p>Link to location: Link Here</p>
+              <p><a href="http://maps.google.com/?q=950 SW 10th Ave, Portland, OR 97205" target='_blank' >Click here for our location.</a></p>
             </div>
             <hr>
-            <hr>
             <!-- Existing Food Cart Posts -->
+            <br><hr>
             <h2><span class="glyphicon glyphicon-cutlery"></span>  The Grilled Cheese Grill</h2>
             <hr>
             <div class="cartImage">
@@ -77,11 +90,12 @@ rgba for opacity change text box thing -->
                 </div>
               </div>
               <p>Owner: Courtney</p>
-              <p>Link to location: Link Here</p>
+              <p><a href="http://maps.google.com/?q=1027 NE Alberta St, Portland, OR 97211" target='_blank' >Click here for our location.</a></p>
             </div>
             <hr>
             <hr>
             <!-- Existing Food Cart Posts -->
+            <br><hr>
             <h2><span class="glyphicon glyphicon-cutlery"></span>  Istanbul Delight</h2>
             <hr>
             <div class="cartImage">
@@ -104,11 +118,13 @@ rgba for opacity change text box thing -->
                 </div>
               </div>
               <p>Owner: Mike</p>
-              <p>Link to location: Link Here</p>
+              <p><a href="http://maps.google.com/?q=SE Division & 50th Ave
+Portland, OR 97215" target='_blank' >Click here for our location.</a></p>
             </div>
             <hr>
             <hr>
             <!-- Existing Food Cart Posts -->
+            <br><hr>
             <h2><span class="glyphicon glyphicon-cutlery"></span>  Maine Street Lobster</h2>
             <hr>
             <div class="cartImage">
@@ -131,11 +147,12 @@ rgba for opacity change text box thing -->
                 </div>
               </div>
               <p>Owner: Summer</p>
-              <p>Link to location: Link Here</p>
+              <p><a href="http://maps.google.com/?q=8145 SE 82nd Ave, Portland, OR 97266" target='_blank' >Click here for our location.</a></p>
             </div>
             <hr>
             <hr>
             <!-- Existing Food Cart Posts -->
+            <br><hr>
             <h2><span class="glyphicon glyphicon-cutlery"></span>  Street-Za</h2>
             <hr>
             <div class="cartImage">
@@ -158,7 +175,7 @@ rgba for opacity change text box thing -->
                 </div>
               </div>
               <p>Owner: Leroi</p>
-              <p>Link to location: Link Here</p>
+              <p><a href="http://maps.google.com/?q=2201 S 84th St, West Allis, WI 53227" target='_blank' >Click here for our location.</a></p>
             </div>
             <hr>
           </div>
@@ -166,13 +183,13 @@ rgba for opacity change text box thing -->
           <div class="col-md-4" "rightSideColumn">
             <div class="well">
 
-              <h2>Side Widget Well</h2>
+              <h5>Featured Food Cart Owner</h5>
               <hr>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, perspiciatis adipisci accusamus laudantium odit aliquam repellat tempore quos aspernatur vero.</p>
             </div>
               <div class="well">
 
-                <h2>Enter Your Food Cart Info Below</h2>
+                <h5>Enter Your Food Cart Info Below</h5>
                 <h4>Sign Up Now!</h4>
                 <div class="row">
                   <div class="col-lg-12">
@@ -210,9 +227,10 @@ rgba for opacity change text box thing -->
                             <input type="text" name="regular" placeholder="street, city, state, zipcode" class="form-control" id="locationLink">
                           </div>
 
-                        </div>
-                      </div>
-                        <button type="submit" class="btn btn-lg btn-default">Submit</button>
+                            </div>
+                          </div>
+                          <div class="butt">
+                        <button type="submit" >Submit</button></div>
                     </form>
                   </div>
                 </div>

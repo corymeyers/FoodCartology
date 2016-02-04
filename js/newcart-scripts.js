@@ -30,7 +30,7 @@ $(document).ready(function() {
     console.log(foodCartOwnerArray);
 
     $("#foodCartColumn").prepend('<div id="cartSummary">' +
-                                '<h2><span class="glyphicon glyphicon-cutlery"></span> ' +
+                                '<hr><h2><span class="glyphicon glyphicon-cutlery"></span> ' +
                                 '<span id="cart-name">' + cartName + '</span></h2> <hr>' + '<div class="cartImage">' +
                                 '<img class="img-responsive"  src=' + foodCartPic + '></div>' + "<hr>" + '<p>Owner:' + ownerName + '</p>' +
 
@@ -50,7 +50,7 @@ $(document).ready(function() {
                                 '</div>' +
 
 
-                                 '</p> <p>Link to location:' + mapLink + '</p>');
+                                 '</p> <p>Link to location:' + mapLink + '</p><hr>');
 
 
     $("input#cartName").val("");
