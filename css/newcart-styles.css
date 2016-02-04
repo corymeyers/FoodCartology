@@ -10,17 +10,22 @@
 /*.rightSideColumn {
   padding-top: 100px;
 }*/
+
+body {
+  background-color: #FBDB86;
+}
 .jumbotron h1 {
   text-align: center;
-  text-shadow: black 0.3em 0.3em 0.3em;
+  text-shadow: black 0.1em 0.1em 0.1em;
+  color: white;
+}
+.jumbotron small {
   color: white;
 }
 
 .jumbotron {
-
-  margin-bottom: 0px;
-  background-image: url(../img/map.jpg);
-  opacity: 0.4;
+  margin-top: -75px !important;
+  background-image: url(../img/burger.png);
   background-position: 0% 25%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -41,11 +46,6 @@
 .modalPic {
   width: 560px;
 
-}
-
-.page-header {
-  text-align: center;
-  padding-bottom: 50px;
 }
 
 .cartImage {
