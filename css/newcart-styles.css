@@ -10,6 +10,13 @@
 /*.rightSideColumn {
   padding-top: 100px;
 }*/
+
+.menuImage {
+  float: right;
+  cursor: pointer;
+}
+
+
 h2 {
   background-color: rgba(255, 252, 215,0.3);
   padding: 8px;

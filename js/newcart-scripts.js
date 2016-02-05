@@ -60,7 +60,7 @@ $(document).ready(function() {
                                 '</div>' +
 
 
-                                 '</p> <p>Link to location:' + mapLink + '</p><hr>');
+                                 '</p> <p>Link to location:' + mapLink + '</p><hr>' );
 
 
     $("input#cartName").val("");
