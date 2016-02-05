@@ -14,8 +14,18 @@ NewFoodCart.prototype.fullCart = function() {
 $(document).ready(function() {
   var foodCartOwnerArray = [];
 
+
   $("form#form").submit(function(event) {
     event.preventDefault();
+    if ( $("input#cartName").val() === "" || $("input#ownerName").val() === "" ||  $("input#locationLink").val() === "" ) {
+      alert("Please fill out entire form");
+      return false;
+    }
+    if ( $("input#foodCartPic").val() === "" || $("input#menuLink").val() === "" ) {
+      alert("Please link to an image. If you need to upload an image from your computer, we at Food Cartology recommend imgur.com.");
+      return false;
+    }
+
     var cartName = $("input#cartName").val();
     var ownerName = $("input#ownerName").val();
     var foodCartPic = $("input#foodCartPic").val();
